@@ -121,3 +121,31 @@ console.log(Object.values(jonathan));
 delete jonathan.nombre;
 console.log(Object.keys(jonathan));
 console.log(jonathan);
+
+// Variables por valor o por referencia
+// Variables por valor
+
+let edadJonathan = 33;
+let edadPuglla = edadJonathan;
+console.log(edadJonathan); // 32
+console.log(edadPuglla); // 32
+edadJonathan = edadJonathan + 1;
+console.log(edadJonathan); // 33
+console.log(edadPuglla); // 32
+
+// Variables por referencia
+let notas = {
+    total: 10,
+};
+
+let notasSegundoBimestre = notas; // IGUALACIÓN REFERENCIA
+notasSegundoBimestre.total = notasSegundoBimestre.total + 1;
+console.log(notas); // 11
+console.log(notasSegundoBimestre); // 11
+// Como clonar objetos
+let notasTercerBimestre = Object.assign({}, notas);
+// Object.assign([], arreglo);
+notasTercerBimestre.total = notasTercerBimestre.total + 1;
+console.log(notas); // 11
+console.log(notasSegundoBimestre); // 11
+console.log(notasTercerBimestre); // 12
