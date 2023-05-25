@@ -22,7 +22,7 @@ const respuestaFind = arreglo
             return valorActual.nota <= 5;
         }
     );
-console.log("respuestaFind: ", respuestaFind);  // Adrian
+console.log("respuestaFind: ", respuestaFind); // Adrian
 
 // FINDINDEX
 // enviamos una expresión -> truty falsy
