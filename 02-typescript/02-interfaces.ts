@@ -29,3 +29,27 @@ type Usuario = {
     // estadoActual no reciba parámetros,"AP" "AF" "AT"
 }
 
+let user: Usuario = {
+    nombre: 'Jonathan',
+    apellido: 'Puglla',
+    casado: 0,
+    sueldo: 11.2,
+    estado: 'AC',
+    imprimirUsuario: (mensaje) => {
+        return 'El mensaje es: ' + mensaje;
+    },
+    calcularImpuesto: impuesto => {
+        return user.sueldo + user.sueldo * impuesto;
+    },
+    estadoActual: () => {
+        switch (user.estado) {
+            case "AC":
+                return 'AP';
+            case "BN":
+                return 'AF';
+            case "IN":
+                return 'AT';
+        }
+    }
+
+}
