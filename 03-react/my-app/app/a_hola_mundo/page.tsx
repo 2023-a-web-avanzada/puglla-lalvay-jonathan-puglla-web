@@ -13,7 +13,7 @@ const b_componente = () => {
     return <></>
 }
 */
-
+'use client'
 import DEstilosEjemplo from "@/app/componentes/DEstilosEjemplo";
 
 export default function page() {
