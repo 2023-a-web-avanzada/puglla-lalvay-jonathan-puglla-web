@@ -1,6 +1,4 @@
 'use client'
-import { css } from '@emotion/react'
-import styled from "@emotion/styled"
 import { useState } from "react";
 
 export type PropiedadesComponente = {
@@ -17,7 +15,7 @@ export default function CComponente(
     // const numeroUno = arreglo[0]
     // const numeroDos = arreglo[1]
     const [numeroUno, numeroDos] = arreglo
-    const contenidoAdicional = () => {
+    const contenidoAdicional: () => (JSX.Element) = ()=>{
         if(mostrar) {
             return <p>Mostrar</p>
         }
@@ -30,28 +28,35 @@ export default function CComponente(
     )
 
     const [colorRojo, setColorRojo] = useState(
-        false
+        "bg-yellow-500"
     )
 
     return (
         <>
-            <div className="border border-solid border-black p-3 m-2">
+            <div className="border border-solid border-yellow p-3 m-2">
                 <a target="_blank" href={url}>IR A URL</a>
-                <p>Iteracion: {iteraciones}</p>
+                <p className={colorRojo}>Iteracion: {iteraciones} {iteracionLocal}</p>
                 <p>Mostrar: {mostrar}</p>
                 {contenidoAdicional()}
                 { mostrar && <p>Mostrar rapido</p>}
-            </div>
 
-            <button className={'${colorRojo?"border border-solid border-black bg-red-500":"border border-solid border-black bg-blue-500"}'} onClick={
+                
+
+            <button className="border border-solid border-black bg-red-500" onClick={
                 (event) => {
-                    setColorRojo(true);
+                    if(colorRojo === "bg-yellow-500") {
+                        setColorRojo("bg-red-500");
+                    } else {
+                        setColorRojo("bg-yellow-500");
+                    }
+                    
                     setIteracionLocal(iteracionLocal + 1);
                     console.log(event);
                 }
             }>
-
+                Aumentar
             </button>
+            </div>
         </>
     )
 }
