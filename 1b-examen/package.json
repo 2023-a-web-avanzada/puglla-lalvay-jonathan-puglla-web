@@ -1,0 +1,18 @@
+{
+  "name": "1b-examen",
+  "version": "1.0.0",
+  "description": "1b-exam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "exam"
+  ],
+  "author": "Jonathan Puglla",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.7"
+  },
+  "type": "module"
+}
