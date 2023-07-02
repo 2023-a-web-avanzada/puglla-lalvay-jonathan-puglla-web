@@ -1,23 +1,23 @@
 [
   {
-    "id": 1,
-    "name": "Brand A",
-    "country": "USA",
-    "established": 1980,
-    "smartphones": ["Phone 1"]
-  },
-  {
     "id": 2,
-    "name": "Brand B",
+    "name": "Samsung",
     "country": "Japan",
     "established": 1995,
-    "smartphones": ["Phone 2"]
+    "active": true
   },
   {
     "id": 3,
-    "name": "Brand C",
+    "name": "Xiaomi",
     "country": "South Korea",
-    "established": 2000,
-    "smartphones": ["Phone 3"]
+    "established": 1980,
+    "active": true
+  },
+  {
+    "id": 4,
+    "name": "Oppo Inc",
+    "country": "Japan",
+    "established": 2023,
+    "active": true
   }
 ]
