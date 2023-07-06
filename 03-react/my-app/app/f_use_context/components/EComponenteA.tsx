@@ -1,4 +1,3 @@
-'use client'
 import {useContext, useEffect} from "react";
 import {ContenedorContext} from "@/app/f_use_context/context/ContenedorContext";
 import EComponenteB from "@/app/f_use_context/components/EComponenteB";

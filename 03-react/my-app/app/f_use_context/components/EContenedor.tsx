@@ -1,4 +1,3 @@
-'use client'
 import {useEffect, useState} from "react";
 import {ContenedorContextObjeto} from "@/app/f_use_context/interfaces/ContenedorContextObjeto";
 import {ContenedorContext} from "@/app/f_use_context/context/ContenedorContext";

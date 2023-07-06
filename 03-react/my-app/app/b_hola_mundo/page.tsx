@@ -13,7 +13,7 @@ const b_componente = () => {
     return <></>
 }
 */
-
+"use client"
 export default function page() {
     return (
         <>

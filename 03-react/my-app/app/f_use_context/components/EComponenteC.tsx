@@ -1,4 +1,3 @@
-'use client'
 import {ContenedorContext} from "@/app/f_use_context/context/ContenedorContext";
 import {useContext} from "react";
 

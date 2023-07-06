@@ -1,5 +1,5 @@
 // d_use_state/page.tsx
-'use client'
+"use client"
 import {useEffect, useState} from "react";
 
 interface Usuario {

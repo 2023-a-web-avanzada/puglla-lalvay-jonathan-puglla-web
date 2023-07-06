@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import CComponente from "@/app/c_componentes/CComponente";
 
 export default function page() {

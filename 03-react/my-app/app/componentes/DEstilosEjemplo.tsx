@@ -1,6 +1,5 @@
 // app/componentes/DEstilosEjemplo.tsx
 // npm install --save @emotion/styled @emotion/react
-'use client'
 import { css } from '@emotion/react'
 import styled from "@emotion/styled"
 import cStyles from './c_estilos.module.css'

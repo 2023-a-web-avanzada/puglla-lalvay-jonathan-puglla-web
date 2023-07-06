@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import useSelectMoneda from "@/app/e_custom_hook/hooks/useSelectMoneda";
 import {MonedasConst} from "@/app/e_custom_hook/consts/monedas_const";
 import {useEffect} from "react";

@@ -1,4 +1,3 @@
-'use client'
 import {useContext} from "react";
 import {ContenedorContext} from "@/app/f_use_context/context/ContenedorContext";
 import EComponenteC from "@/app/f_use_context/components/EComponenteC";
