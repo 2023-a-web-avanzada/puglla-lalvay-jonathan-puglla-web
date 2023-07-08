@@ -1,8 +1,8 @@
 // app/componentes/DEstilosEjemplo.tsx
 // npm install --save @emotion/styled @emotion/react
-import { css } from '@emotion/react'
-import styled from "@emotion/styled"
-import cStyles from './c_estilos.module.css'
+import { css } from '@emotion/react';
+import styled from "@emotion/styled";
+import cStyles from './c_estilos.module.css';
 
 const pinkStyle = css`
   color: pink;

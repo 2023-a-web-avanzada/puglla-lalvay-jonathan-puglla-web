@@ -1,5 +1,4 @@
-import {App, Page, Navbar} from "konsta/react";
-import {BlockTitle, List, ListItem} from "konsta/react";
+import {App, Page, Navbar, BlockTitle, List, ListItem} from "konsta/react";
 import {Button} from "@mui/material";
 
 export default function EjemploKonsta() {
