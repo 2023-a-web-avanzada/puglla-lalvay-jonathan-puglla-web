@@ -1,4 +1,3 @@
-'use client'
 import {ConsultaMoneda} from "@/app/g_ejemplo_criptomoneda/interfaces/consulta-moneda";
 import {useEffect, useState} from "react";
 import {MonedasConst} from "@/app/e_custom_hook/consts/monedas_const";

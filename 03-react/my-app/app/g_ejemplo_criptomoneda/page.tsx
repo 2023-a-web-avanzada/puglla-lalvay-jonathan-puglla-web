@@ -1,5 +1,5 @@
 // g_ejemplo_criptomoneda
-'use client'
+"use client"
 import {useEffect, useState} from "react";
 import {ConsultaMoneda} from "@/app/g_ejemplo_criptomoneda/interfaces/consulta-moneda";
 import CryptoFormulario from "@/app/g_ejemplo_criptomoneda/components/CryptoFormulario";
