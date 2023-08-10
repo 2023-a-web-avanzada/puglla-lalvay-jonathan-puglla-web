@@ -1,6 +1,6 @@
 import * as helper from "./helper.js";
 
-const brandsFilePath = './data/brands.json';
+const brandsFilePath = './data/brand.json';
 const smartphonesFilePath = './data/smartphones.json';
 
 // Create
@@ -22,7 +22,7 @@ async function createBrand(brand) {
 async function getAllBrands() {
     const brands = await helper.readJSONFile(brandsFilePath);
     if (brands.length === 0) {
-        console.log('No brands found.');
+        console.log('No brand found.');
     } else {
         console.log('All Brands:');
         brands.forEach(brand => {

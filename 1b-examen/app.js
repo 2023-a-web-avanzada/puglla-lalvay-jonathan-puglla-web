@@ -4,7 +4,7 @@ import * as brandHelper from "./helper/brandHelper.js";
 import * as helper from "./helper/helper.js";
 
 // Variables
-const brandsFilePath = './data/brands.json';
+const brandsFilePath = './data/brand.json';
 const smartphonesFilePath = './data/smartphones.json';
 
 // Functions
