@@ -1,0 +1,28 @@
+{
+  "brands": [
+    {
+      "id": 2,
+      "name": "Samsung",
+      "country": "South Korea",
+      "established": 1995,
+      "active": true,
+      "imageURL": "https://new-media.dhakatribune.com/en/uploads/2022/05/17/samsung-logo.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Xiaomi",
+      "country": "China",
+      "established": 1980,
+      "active": true,
+      "imageURL": "https://w0.peakpx.com/wallpaper/1003/960/HD-wallpaper-mi-black-logo-mi-black-white-note-thumbnail.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Apple",
+      "country": "USA",
+      "established": 2023,
+      "active": true,
+      "imageURL": "https://wallpaperaccess.com/thumb/644237.jpg"
+    }
+  ]
+}
