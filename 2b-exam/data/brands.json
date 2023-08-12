@@ -1,7 +1,7 @@
 {
   "brands": [
     {
-      "id": 2,
+      "id": "2",
       "name": "Samsung",
       "country": "South Korea",
       "established": 1995,
@@ -9,7 +9,7 @@
       "imageURL": "https://new-media.dhakatribune.com/en/uploads/2022/05/17/samsung-logo.jpeg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Xiaomi",
       "country": "China",
       "established": 1980,
@@ -17,7 +17,7 @@
       "imageURL": "https://w0.peakpx.com/wallpaper/1003/960/HD-wallpaper-mi-black-logo-mi-black-white-note-thumbnail.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Apple",
       "country": "USA",
       "established": 2023,
@@ -25,28 +25,12 @@
       "imageURL": "https://wallpaperaccess.com/thumb/644237.jpg"
     },
     {
-      "id": 1,
-      "name": "Test",
-      "country": "Country test",
-      "established": "1999",
-      "active": true,
-      "imageURL": "https://www.breakwalk.com/cdn/shop/files/bw1200_651ec3f2-491b-4039-9785-0a2e635a6a43.jpg?v=1631535406"
-    },
-    {
-      "id": 5,
-      "name": "Test 2",
-      "country": "Country test 2",
-      "established": "1998",
-      "active": true,
-      "imageURL": "https://www.breakwalk.com/cdn/shop/files/bw1200_651ec3f2-491b-4039-9785-0a2e635a6a43.jpg?v=1631535406"
-    },
-    {
-      "id": 6,
-      "name": "Test 3",
+      "id": "41f34e1a-f93f-4d3f-a2f8-a8a41f29ccd2",
+      "name": "New Test",
       "country": "Ecuador",
-      "established": "2000",
+      "established": "1990",
       "active": true,
-      "imageURL": "https://www.breakwalk.com/cdn/shop/files/bw1200_651ec3f2-491b-4039-9785-0a2e635a6a43.jpg?v=1631535406"
+      "imageURL": "https://pbs.twimg.com/profile_images/1042385443323633664/6QmiFQUx_400x400.jpg"
     }
   ]
 }

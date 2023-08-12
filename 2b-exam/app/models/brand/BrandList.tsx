@@ -7,10 +7,9 @@ import BrandActions from "@/app/models/brand/BrandActions";
 
 interface BrandListProps {
     brands: Brand[];
-    onDelete: (brandId: number) => void;
 }
 
-const BrandList: React.FC<BrandListProps> = ({ brands, onDelete}) => {
+const BrandList: React.FC<BrandListProps> = ({ brands}) => {
     const [showModals, setShowModals] = useState<boolean[]>(
         brands.map(() => false)
     );
@@ -117,9 +116,8 @@ const BrandList: React.FC<BrandListProps> = ({ brands, onDelete}) => {
                                     </button>
                                     {showModals[index] && (
                                         <BrandActions
-                                            brandId={brand.id}
+                                            brand={brand}
                                             onClose={() => handleCloseModal(index)}
-                                            onDelete={onDelete}
                                         />
                                     )}
                                 </div>

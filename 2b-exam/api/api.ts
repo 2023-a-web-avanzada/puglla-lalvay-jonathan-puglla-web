@@ -18,7 +18,26 @@ const addBrand = async (brand: Brand): Promise<Brand> => {
     return await res.json();
 }
 
+const editBrand = async (brand: Brand): Promise<Brand> => {
+    const res = await fetch(`${baseUrl}/brands/${brand.id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(brand)
+    })
+    return await res.json();
+}
+
+const deleteBrand = async (id: string): Promise<void> => {
+    await fetch(`${baseUrl}/brands/${id}`, {
+        method: 'DELETE',
+    })
+}
+
 export {
     getAllBrands,
-    addBrand
+    addBrand,
+    editBrand,
+    deleteBrand
 }
