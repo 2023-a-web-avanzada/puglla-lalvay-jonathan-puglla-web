@@ -15,6 +15,14 @@
       "established": 2023,
       "active": true,
       "imageURL": "https://static.wixstatic.com/media/b49508_75eee22982fb45bca1f2e09bd74606a8~mv2.png/v1/fill/w_1000,h_667,al_c,q_90,usm_0.66_1.00_0.01/b49508_75eee22982fb45bca1f2e09bd74606a8~mv2.png"
+    },
+    {
+      "id": "605920e4-d955-4cff-97fe-ee6840a2d987",
+      "name": "Samsung",
+      "country": "Korea",
+      "established": "1978",
+      "active": true,
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTloMoDWp_VOrsuCO9HnGyF-c9EuanvZ83ThQ&usqp=CAU"
     }
   ],
   "smartphones": [
@@ -23,7 +31,7 @@
       "name": "iPhone 14 Pro",
       "brandId": "4",
       "color": "Purple",
-      "price": "1200.99",
+      "price": "1999",
       "imageURL": "https://www.digitaltrends.com/wp-content/uploads/2022/10/iphone-14-pro-max-hero-photo.jpg?fit=2000%2C1333&p=1"
     },
     {
@@ -33,6 +41,14 @@
       "color": "Silver",
       "price": "980.99",
       "imageURL": "https://i.blogs.es/89f704/redmi-note-11-6/1366_521.jpg"
+    },
+    {
+      "id": "173fb8ab-78f3-4dd4-beff-848d8328458c",
+      "name": "Samsung S23 Ultra",
+      "brandId": "605920e4-d955-4cff-97fe-ee6840a2d987",
+      "color": "Green",
+      "price": "1299.99",
+      "imageURL": "https://i.blogs.es/3339e4/img_1199/840_560.jpg"
     }
   ]
 }

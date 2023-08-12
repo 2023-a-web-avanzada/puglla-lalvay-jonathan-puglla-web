@@ -31,8 +31,13 @@ const AddSmartphone:React.FC<AddSmartphoneProps> = ({brandId}) => {
             imageURL: smartphoneImageURLState || getDefaultSmartphoneImageURL()
         });
         setAddSmartphoneModalOpen(false);
+        setSmartphonePriceState("");
+        setSmartphoneColorState("");
+        setSmartphoneImageURLState("");
+        setSmartphoneNameState("");
         router.refresh();
     };
+
     return(
         <>
             <div className="px-16 pt-4">
@@ -42,7 +47,7 @@ const AddSmartphone:React.FC<AddSmartphoneProps> = ({brandId}) => {
                     <BiSolidAddToQueue size={20} className="mr-1"/> Create new smartphone
                 </button>
                 <Modal modalOpen={smartphoneModalOpen} setModalOpen={setAddSmartphoneModalOpen}>
-                    <form onSubmit={handleSubmitNewSmartphone}>
+                    <form onSubmit={handleSubmitNewSmartphone} id="add-smartphone-form">
                         <h3 className='font-bold text-3xl py-2 text-center'>Add a new smartphone</h3>
                         <div>
                             <div className="py-2"></div>
@@ -93,6 +98,9 @@ const AddSmartphone:React.FC<AddSmartphoneProps> = ({brandId}) => {
                             <button
                                 type='submit'
                                 className='btn border border-black w-full bg-white text-black hover:border-transparent hover:bg-black hover:text-white'
+                                onClick={(e) => {
+
+                                }}
                             >
                                 Add smartphone
                             </button>

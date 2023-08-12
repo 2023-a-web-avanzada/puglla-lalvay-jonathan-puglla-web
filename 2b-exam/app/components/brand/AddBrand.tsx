@@ -28,6 +28,11 @@ const AddBrand = () => {
             imageURL: imageURLState || getDefaultBrandImageURL()
         });
         setModalOpen(false);
+        setActiveState(true);
+        setImageURLState("");
+        setNameState("");
+        setCountryState("");
+        setEstablishedState("");
         router.refresh();
     };
 
