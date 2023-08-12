@@ -1,5 +1,3 @@
-'use client'
-
 import React from "react";
 
 interface ModalProps {
@@ -11,10 +9,10 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ modalOpen, setModalOpen, children }) => {
     return (
         <div className={`modal ${modalOpen ? "modal-open" : ""}`}>
-            <div className='modal-box relative'>
+            <div className='modal-box bg-white text-black shadow-2xl relative'>
                 <label
                     onClick={() => setModalOpen(false)}
-                    className='btn btn-sm btn-circle absolute right-2 top-2'
+                    className='btn btn-sm btn-circle absolute text-white right-2 top-2 bg-black border-transparent hover:bg-white hover:text-black'
                 >
                     ✕
                 </label>

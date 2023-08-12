@@ -30,7 +30,7 @@ const editBrand = async (brand: Brand): Promise<Brand> => {
 }
 
 const deleteBrand = async (id: string): Promise<void> => {
-    await fetch(`${baseUrl}/brands/${id}`, {
+    await fetch(`${baseUrl}/brands/${id}?_embed=smartphones`, {
         method: 'DELETE',
     })
 }

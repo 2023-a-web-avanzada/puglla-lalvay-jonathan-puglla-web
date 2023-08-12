@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --dark-regal-blue: #26292B;
+    --dark-gray: #2E3239;
+    --regal-blue: #5F7ADB;
+    --light-regal-blue: #A2B2EE;
+    --light-white: #ffffff;
+    background-color: var(--light-white);
+    background-image: url("../public/bg.jpg");
+}

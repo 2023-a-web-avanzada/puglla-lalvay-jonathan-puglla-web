@@ -1,0 +1,38 @@
+{
+  "brands": [
+    {
+      "id": "3",
+      "name": "Xiaomi",
+      "country": "China",
+      "established": 1980,
+      "active": true,
+      "imageURL": "https://i02.appmifile.com/i18n/share/default.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Apple",
+      "country": "USA",
+      "established": 2023,
+      "active": true,
+      "imageURL": "https://static.wixstatic.com/media/b49508_75eee22982fb45bca1f2e09bd74606a8~mv2.png/v1/fill/w_1000,h_667,al_c,q_90,usm_0.66_1.00_0.01/b49508_75eee22982fb45bca1f2e09bd74606a8~mv2.png"
+    }
+  ],
+  "smartphones": [
+    {
+      "id": "3",
+      "name": "iPhone 14 Pro",
+      "brandId": "4",
+      "color": "Purple",
+      "price": "1200.99",
+      "imageURL": "https://www.digitaltrends.com/wp-content/uploads/2022/10/iphone-14-pro-max-hero-photo.jpg?fit=2000%2C1333&p=1"
+    },
+    {
+      "id": "0757ac8c-0221-4846-882b-af16568ae485",
+      "name": "Xiaomi Mi Note 11",
+      "brandId": "3",
+      "color": "Silver",
+      "price": "980.99",
+      "imageURL": "https://i.blogs.es/89f704/redmi-note-11-6/1366_521.jpg"
+    }
+  ]
+}

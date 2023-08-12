@@ -4,4 +4,5 @@ export interface Smartphone {
     brandId: string;
     color: string;
     price: number;
+    imageURL: string;
 }

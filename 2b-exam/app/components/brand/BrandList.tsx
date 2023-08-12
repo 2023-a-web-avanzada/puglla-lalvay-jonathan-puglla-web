@@ -2,7 +2,7 @@
 
 import React, {useState} from 'react';
 import {Brand} from "@/app/types/Brand";
-import BrandActions from "@/app/models/brand/BrandActions";
+import BrandActions from "@/app/components/brand/BrandActions";
 
 
 interface BrandListProps {
@@ -28,13 +28,15 @@ const BrandList: React.FC<BrandListProps> = ({ brands}) => {
 
     return (
         <>
-            <div className="bg-gradient-to-tr from-0% to-25% flex justify-center items-center py-20">
+            <div className="flex justify-center items-center py-20">
                 <div className="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
                     {brands?.map((brand, index) => (
                         <div key={brand.id}>
                             <div className={`
                                     max-w-sm 
-                                    bg-white 
+                                    border-gray-100 
+                                    backdrop-blur-md
+                                    bg-white/60
                                     px-6 
                                     pt-6 
                                     pb-2 
@@ -46,26 +48,24 @@ const BrandList: React.FC<BrandListProps> = ({ brands}) => {
                                     duration-500
                                 `}
                             >
-                                <h3 className="mb-3 text-xl font-bold text-black">{brand.name}</h3>
+                                <h3 className="mb-3 text-xl font-extrabold text-black">{brand.name}</h3>
                                 <div className="relative">
-                                    <img className="rounded-xl object-cover h-48 w-96"
+                                    <img className="rounded-xl shadow-md object-cover h-48 w-96"
                                          src={brand.imageURL}
                                          alt="Colors"/>
                                     <p className={`
                                             absolute 
                                             top-0 
-                                            backdrop-blur-sm 
-                                            bg-white/30 
-                                            text-white 
-                                            backdrop-brightness-100 
-                                            md:backdrop-filter-none 
+                                            backdrop-blur-sm
+                                            bg-amber-300 
+                                            text-black 
                                             font-semibold
                                             py-1 
                                             px-3 
                                             rounded-br-lg 
                                             rounded-tl-lg 
                                             border-black
-                                        `}
+                                    `}
                                     >
                                         {brand.active?"Active":"Inactive"}
                                     </p>
@@ -80,7 +80,7 @@ const BrandList: React.FC<BrandListProps> = ({ brands}) => {
                                                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                         </svg>
                                     </span>
-                                        <p><strong>Year:</strong> {brand.established}</p>
+                                        <p className="text-gray-600"><strong className="text-black">Year:</strong> {brand.established}</p>
                                     </div>
                                     <div className="flex space-x-1 items-center">
                                     <span>
@@ -95,20 +95,23 @@ const BrandList: React.FC<BrandListProps> = ({ brands}) => {
                                         />
                                         </svg>
                                     </span>
-                                        <p><strong>Country:</strong> {brand.country}</p>
+                                        <p className="text-gray-600"><strong className="text-black">Country:</strong> {brand.country}</p>
                                     </div>
                                     <button
                                         className={`
                                             mt-4 
                                             text-xl 
                                             w-full 
-                                            text-white
-                                            bg-black 
+                                            bg-black
                                             py-2 
-                                            rounded-xl 
                                             shadow-lg 
-                                            hover:text-black
-                                            hover:bg-white
+                                            border 
+                                            rounded-xl 
+                                            text-white 
+                                            border-black 
+                                            hover:text-black 
+                                            hover:bg-white 
+                                            backdrop-blur
                                         `}
                                         onClick={() => handleOpenModal(index)}
                                     >
