@@ -13,28 +13,28 @@ const socket = io('http://localhost:3001');
 interface pageProps {}
 
 type DrawLineProps = {
-  prevPoint: Point | null
-  currentPoint: Point
-  color: string
+  prevPoint: Point | null;
+  currentPoint: Point;
+  color: string;
 }
 
 const page: React.FC<pageProps> = ({}) => {
-  const [color, setColor] = useState<string>('#000')
-  const { canvasRef, onMouseDown, clear } = useDraw(createLine)
+  const [color, setColor] = useState<string>('#000');
+  const { canvasRef, onMouseDown, clear } = useDraw(createLine);
 
   useEffect(() => {
-    const ctx = canvasRef.current?.getContext('2d')
+    const ctx = canvasRef.current?.getContext('2d');
 
-    socket.emit('client-ready')
+    socket.emit('client-ready');
 
     socket.on('get-canvas-state', () => {
       if (!canvasRef.current?.toDataURL()) return
-      console.log('Sending canvas state')
-      socket.emit('canvas-state', canvasRef.current.toDataURL())
+      console.log('Sending canvas state');
+      socket.emit('canvas-state', canvasRef.current.toDataURL());
     })
 
     socket.on('canvas-state-from-server', (state: string) => {
-      console.log('I received the state')
+      console.log('I received the state');
       const img = new Image()
       img.src = state
       img.onload = () => {
@@ -43,23 +43,23 @@ const page: React.FC<pageProps> = ({}) => {
     })
 
     socket.on('draw-line', ({ prevPoint, currentPoint, color }: DrawLineProps) => {
-      if (!ctx) return console.log('no ctx here')
-      drawLine({ prevPoint, currentPoint, ctx, color })
+      if (!ctx) return console.log('no ctx here');
+      drawLine({ prevPoint, currentPoint, ctx, color });
     })
 
     socket.on('clear', clear)
 
     return () => {
-      socket.off('draw-line')
-      socket.off('get-canvas-state')
-      socket.off('canvas-state-from-server')
-      socket.off('clear')
+      socket.off('draw-line');
+      socket.off('get-canvas-state');
+      socket.off('canvas-state-from-server');
+      socket.off('clear');
     }
   }, [canvasRef])
 
   function createLine({ prevPoint, currentPoint, ctx }: Draw) {
-    socket.emit('draw-line', { prevPoint, currentPoint, color })
-    drawLine({ prevPoint, currentPoint, ctx, color })
+    socket.emit('draw-line', { prevPoint, currentPoint, color });
+    drawLine({ prevPoint, currentPoint, ctx, color });
   }
 
   return (
